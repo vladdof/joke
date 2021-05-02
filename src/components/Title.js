@@ -16,8 +16,7 @@ class Title extends React.Component {
     render() {
         return (
             <TitleElement>
-                10 <span>смешных</span>? шуток
-                для разрботчика
+                { this.props.text }
             </TitleElement>
         )
     }

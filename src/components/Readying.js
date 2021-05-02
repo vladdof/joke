@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import Text from './Text.js';
+import ListItem from './ListItem';
+
 const ReadyingElement = styled.div`
-    h4 {
+    h2 {
         font-style: italic;
         font-weight: bold;
     }
-    ul {
-        font-weight: 500;
-    }
+`
+
+const List = styled.ul`
+    font-weight: 500;
 `
 
 class Readying extends React.Component {
     render() {
         return (
             <ReadyingElement>
-                <h4>но сначала, подготовьтесь:</h4>
-                <ul>
-                    <li>сядьте на стул,</li>
-                    <li>вдохните,</li>
-                    <li>выдохните,</li>
-                    <li>расслабьтесь.</li>
-                </ul>
+                <Text text="но сначала, подготовьтесь:" bold italic></Text>
+                <List>
+                    <ListItem text="сядьте на стул," />
+                    <ListItem text="вдохните," />
+                    <ListItem text="выдохните," />
+                    <ListItem text="расслабьтесь." />
+                </List>
             </ReadyingElement>
             )
     }
