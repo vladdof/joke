@@ -3,10 +3,14 @@ import styled from 'styled-components';
 
 const LinkElement = styled.a`
     font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
     text-decoration-line: underline;
     color: var(--orange-color, #f66c41);
+    cursor: pointer;
+    transition: filter 0.3s;
+
+    &:hover {
+        filter: grayscale(0.7);
+    }
 `;
 
 class Link extends React.Component {

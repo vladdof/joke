@@ -12,14 +12,20 @@ const ReadyingElement = styled.div`
 `
 
 const List = styled.ul`
+    margin-top: 5px;
+    margin-bottom: calc(var(--mb));
     font-weight: 500;
+
+    @media (min-width: 658px) {
+       margin-bottom: calc(var(--mb) / 2);
+    }
 `
 
 class Readying extends React.Component {
     render() {
         return (
             <ReadyingElement>
-                <Text text="но сначала, подготовьтесь:" bold italic></Text>
+                <Text text="но сначала, подготовьтесь:" bold italic mb="20px"></Text>
                 <List>
                     <ListItem text="сядьте на стул," />
                     <ListItem text="вдохните," />

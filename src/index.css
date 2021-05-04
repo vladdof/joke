@@ -2,6 +2,8 @@
     --white-color: #fff;
     --orange-color: #f66c41;
     --black-color: #000;
+    --mb: 10vw;
+    --font-size: 4vw;
 }
 body {
     margin: 0;
